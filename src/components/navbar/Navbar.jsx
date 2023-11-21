@@ -1,10 +1,11 @@
 import Motion from '../Motion'
+import Sidebar from '../sidebar/Sidebar'
 import './navbar.scss'
 
 function Navbar () {
   return (
     <div className='navbar'>
-      {/* Sidebar */}
+      <Sidebar />
       <div className="wrapper">
         <Motion>
           <span>Melani Mares</span>
