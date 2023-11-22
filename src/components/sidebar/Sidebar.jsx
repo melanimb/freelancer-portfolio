@@ -4,26 +4,26 @@ import './sidebar.scss'
 import ToggleButton from './toggleButton/ToggleButton'
 import { motion } from 'framer-motion'
 
-function Sidebar () {
-  const [open, setOpen] = useState(false)
-
-  const variants = {
-    open: {
-      clipPath: 'circle(1300px at 50px 50px)',
-      transition: {
-        type: 'spring',
-        stiffness: 30
-      }
-    },
-    closed: {
-      clipPath: 'circle(30px at 50px 50px)',
-      transition: {
-        type: 'spring',
-        stiffness: 400,
-        damping: 40
-      }
+const variants = {
+  open: {
+    clipPath: 'circle(1300px at 50px 50px)',
+    transition: {
+      type: 'spring',
+      stiffness: 30
+    }
+  },
+  closed: {
+    clipPath: 'circle(30px at 50px 50px)',
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 40
     }
   }
+}
+
+function Sidebar () {
+  const [open, setOpen] = useState(false)
 
   return (
     <motion.div className='sidebar' animate={open ? 'open' : 'closed'}>
