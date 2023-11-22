@@ -8,7 +8,7 @@ function Navbar () {
       <Sidebar />
       <div className="wrapper">
         <Motion>
-          <span>Melani Mares</span>
+          <span>MELANI MARES</span>
         </Motion>
         <Motion>
           <div className="social">

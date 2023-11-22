@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 
 const items = [
-  'Homepage',
-  'Services',
-  'Portfolio',
-  'Contact'
+  'Inicio',
+  'Servicios',
+  'Trabajos',
+  'Contacto'
 ]
 
 const variants = {
