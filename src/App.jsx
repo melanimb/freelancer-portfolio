@@ -4,17 +4,17 @@ import Hero from './components/hero/Hero'
 
 const App = () => {
   return <div>
-    <section id='Homepage'>
+    <section id='Inicio'>
       <Navbar />
       <Hero />
     </section>
-    <section id='Services'>Parallax</section>
+    <section id='Servicios'>Parallax</section>
     <section>Services</section>
-    <section id='Portfolio'>Parallax</section>
+    <section id='Trabajos'>Parallax</section>
     <section>Portfolio1</section>
     <section>Portfolio2</section>
     <section>Portfolio3</section>
-    <section id='Contact'>Contact</section>
+    <section id='Contacto'>Contact</section>
   </div>
 }
 
