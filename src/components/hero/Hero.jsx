@@ -62,6 +62,9 @@ function Hero () {
           />
         </motion.div>
       </div>
+      <div className="imageContainer">
+        <img src="/spline.png" alt="spline image" />
+      </div>
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
@@ -70,9 +73,6 @@ function Hero () {
       >
         Web Design And Developement
       </motion.div>
-      <div className="imageContainer">
-        <img src="/hero.png" alt="hero image" />
-      </div>
     </div>
   )
 }
