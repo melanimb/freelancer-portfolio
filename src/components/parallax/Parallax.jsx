@@ -22,7 +22,7 @@ function Parallax ({ type }) {
             : 'linear-gradient(180deg, #111132, #505064'
       }}>
       <motion.h1 style={{ y: yText }}>
-        {type === 'services' ? 'Servicios' : 'Trabajos'}
+        {type === 'services' ? 'Servicios' : 'Portfolio'}
       </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
