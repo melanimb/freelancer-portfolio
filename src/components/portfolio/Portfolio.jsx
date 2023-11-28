@@ -7,19 +7,22 @@ const items = [
     id: 1,
     title: 'Biobella landing page',
     img: '../../public/portfolio/biobella.png',
-    desc: 'Landing page de un centro de estética realizada con NextJS y TailwindCSS'
+    desc: 'Landing page de un centro de estética realizada con NextJS y TailwindCSS',
+    href: 'https://biobella.vercel.app/'
   },
   {
     id: 2,
     title: 'FreePics galería de imágenes',
     img: '../../public/portfolio/free-pics-preview.gif',
-    desc: 'Buscador de imágenes realizado con NextJS, TailwindCSS y Pexels API'
+    desc: 'Buscador de imágenes realizado con NextJS, TailwindCSS y Pexels API',
+    href: 'https://free-pics.vercel.app/'
   },
   {
     id: 3,
     title: 'StoreTrack panel de administración',
     img: '../../public/portfolio/store-track.jpg',
-    desc: 'Panel de administración realizado con Ruby on Rails y Bootstrap 5'
+    desc: 'Panel de administración realizado con Ruby on Rails y Bootstrap 5',
+    href: 'https://github.com/melanimb/store-track'
   }
 ]
 
@@ -42,7 +45,14 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <button>Ver proyecto</button>
+            <button>
+              <a
+                href={item.href}
+                target='_blank' rel="noreferrer"
+              >
+                Ver proyecto
+              </a>
+            </button>
           </motion.div>
         </div>
       </div>
