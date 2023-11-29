@@ -70,10 +70,9 @@
         width: 200px;
         cursor: pointer;
 
-      }
-      
-      button:hover {
-        background-color: #b469ff30;
+        &:hover {
+          background-color: #b469ff30;
+        }
       }
     }
   }
