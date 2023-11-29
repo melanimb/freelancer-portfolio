@@ -1,5 +1,7 @@
+import { useRef, useState } from 'react'
 import './contact.scss'
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 
 const variants = {
   initial: {
@@ -17,6 +19,22 @@ const variants = {
 }
 
 function Contact () {
+  const formRef = useRef()
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_bou1xyz', 'template_s5xuxdc', formRef.current, 'jmjgbqpCQ1Qtj93Go')
+      .then((result) => {
+        setSuccess(true)
+      }, (error) => {
+        setError(true)
+        console.log(error.text)
+      })
+  }
+
   return (
     <motion.div
       className="contact"
@@ -67,14 +85,18 @@ function Contact () {
           </svg>
         </motion.div>
         <motion.form
+          ref={formRef}
+          onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
         >
-          <input type="text" placeholder='Name' required />
-          <input type="email" placeholder='Email' required />
-          <textarea rows={8} placeholder='Message' />
+          <input type="text" placeholder='Name' required name='name' />
+          <input type="email" placeholder='Email' required name='email' />
+          <textarea rows={8} placeholder='Message' name='message' />
           <button>Submit</button>
+          {error && 'Error: el mensaje no se pudo enviar'}
+          {success && 'Mensaje enviado correctamente'}
         </motion.form>
       </div>
     </motion.div>
