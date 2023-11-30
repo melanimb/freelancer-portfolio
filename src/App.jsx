@@ -10,9 +10,9 @@ const App = () => {
   return <div>
     <section id='Inicio'>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
     </section>
-    {/* <section id='Servicios'>
+    <section id='Servicios'>
       <Parallax type='services' />
     </section>
     <section>
@@ -24,7 +24,7 @@ const App = () => {
     <Portfolio />
     <section id='Contacto'>
       <Contact />
-    </section> */}
+    </section>
   </div>
 }
 

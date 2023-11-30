@@ -1,6 +1,5 @@
-import { useRef } from 'react'
 import './services.scss'
-import { motion, useInView } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const variants = {
   initial: {
@@ -20,25 +19,20 @@ const variants = {
 }
 
 function Services () {
-  const ref = useRef()
-
-  const isInView = useInView(ref, { margin: '-100px' })
-
   return (
     <motion.div
       className='services'
       variants={variants}
       initial='initial'
-      ref={ref}
-      animate={isInView && 'animate'}
+      animate={'animate'}
     >
-      <motion.div className="textContainer" variants={variants}>
+      <div className="textContainer">
         <p>
           Impulsa tu negocio
           <br />y hazlo crecer
         </p>
         <hr />
-      </motion.div>
+      </div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/people.webp" alt="people in office image" />
