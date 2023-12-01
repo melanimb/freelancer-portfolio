@@ -11,7 +11,7 @@
 
   .bg {
     position: fixed;
-    z-index: 50;
+    z-index: 990;
     top: 0;
     left: 0;
     bottom: 0;
@@ -49,7 +49,7 @@
     position: fixed;
     top: 40px;
     left: 25px;
-    z-index: 50;
+    z-index: 999;
     height: 25px;
     background-color: transparent;
     border: none;
