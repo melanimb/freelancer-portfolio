@@ -77,7 +77,7 @@ function Portfolio () {
     <div className='portfolio' ref={ref}>
       <div className="progress">
         <h1>Proyectos destacados</h1>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+        <motion.div style={{ scaleX }} className="progressBar" />
       </div>
       {items.map(item => (
         <Single item={item} key={item.id} />

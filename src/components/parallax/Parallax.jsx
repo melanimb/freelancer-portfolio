@@ -32,7 +32,7 @@ function Parallax ({ type }) {
         style={{
           y: yBg,
           backgroundImage:
-          `url(${type === 'services' ? '/planets.png' : '/sun.png'})`
+          `url(${type === 'services' ? '/sun.png' : '/planets.png'})`
         }}
       ></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>
