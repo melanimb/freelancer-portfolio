@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const items = [
   'Inicio',
-  'Servicios',
+  'Sobre mí',
   'Portfolio',
   'Contacto'
 ]

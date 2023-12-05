@@ -1,5 +1,8 @@
 import './hero.scss'
 import { motion } from 'framer-motion'
+import Spline from '@splinetool/react-spline'
+import React, { useState, Suspense } from 'react'
+import { ClipLoader } from 'react-spinners'
 
 const textVariants = {
   initial: {
@@ -39,28 +42,36 @@ const sliderVariants = {
 }
 
 function Hero () {
+  const [isSplineLoading, setSplineLoading] = useState(true)
+
+  const handleSplineLoad = () => {
+    setSplineLoading(false)
+  }
+
   return (
     <div className="hero">
       <div className="wrapper">
-        <motion.div
+        <div
           className="textContainer"
-          variants={textVariants}
-          initial='initial'
-          animate='animate'
         >
-          <motion.h2 variants={textVariants}>MELANI MARES</motion.h2>
-          <motion.h1 variants={textVariants}>Desarrollo y diseño web a medida</motion.h1>
-          <motion.div className="buttons" variants={textVariants}>
-            <motion.a href='#Portfolio' variants={textVariants}>Ver portfolio</motion.a>
-            <motion.a href='#Contacto' variants={textVariants}>Contacto</motion.a>
-          </motion.div>
+          <h2>MELANI MARES</h2>
+          <h1>Desarrolladora web · Diseñadora UI/UX</h1>
+          <div className="buttons">
+            <a href='#Portfolio'>Ver portfolio</a>
+            <a href='#Contacto'>Contacto</a>
+          </div>
           <motion.img
             src="/scroll.png"
             alt="scroll image"
             variants={textVariants}
             animate='scrollButton'
           />
-        </motion.div>
+        </div>
+      </div>
+      <div className="splineContainer">
+        <Suspense fallback={<ClipLoader color="#36D7B7" loading={isSplineLoading} />}>
+          <Spline scene="https://prod.spline.design/VcqsjbGvt6w45x39/scene.splinecode" onLoad={handleSplineLoad} />
+        </Suspense>
       </div>
       <div className="imageContainer">
         <img src="/spline.png" alt="spline image" />

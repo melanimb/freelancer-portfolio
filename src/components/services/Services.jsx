@@ -28,8 +28,8 @@ function Services () {
     >
       <div className="textContainer">
         <p>
-          Impulsa tu negocio
-          <br />y hazlo crecer
+          Frontend
+          <br />Developer
         </p>
         <hr />
       </div>
@@ -37,9 +37,9 @@ function Services () {
         <div className="title">
           <img src="/setup.png" alt="setup image" />
           <h1>
-            <motion.b whileHover={{ color: '#8441c7' }}>Ideas </motion.b>Únicas
+            <motion.b whileHover={{ color: '#8441c7' }}>Desarrollo </motion.b>y
             <br />
-            Para tu <motion.b whileHover={{ color: '#8441c7' }}>Negocio.</motion.b>
+            Diseño <motion.b whileHover={{ color: '#8441c7' }}>Web.</motion.b>
           </h1>
         </div>
       </motion.div>
@@ -81,8 +81,17 @@ function Services () {
         </div>
 
         <div className="box">
-          <h2>Marca</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores officiis nostrum sequi consectetur cumque, praesentium dolorum aliquid explicabo commodi eveniet. Praesentium pariatur optio tempore ea eum vel, est cupiditate nemo!</p>
+          <h2>Sobre mí</h2>
+          <p>
+            Me apasiona el desarrollo frontend,
+            el diseño web,
+            aprender nuevas tecnologías y explorar
+            formas originales de resolver
+            problemas. Me interesa
+            trabajar en proyectos nuevos y
+            desafiantes que me permitan crecer
+            profesionalmente.
+          </p>
         </div>
       </motion.div>
     </motion.div>
