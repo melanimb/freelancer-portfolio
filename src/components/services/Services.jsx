@@ -1,30 +1,9 @@
 import './services.scss'
-import { motion } from 'framer-motion'
-
-const variants = {
-  initial: {
-    x: -500,
-    y: 100,
-    opacity: 0
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1
-    }
-  }
-}
 
 function Services () {
   return (
-    <motion.div
+    <div
       className='services'
-      variants={variants}
-      initial='initial'
-      animate={'animate'}
     >
       <div className="textContainer">
         <p>
@@ -33,17 +12,17 @@ function Services () {
         </p>
         <hr />
       </div>
-      <motion.div className="titleContainer" variants={variants}>
+      <div className="titleContainer">
         <div className="title">
           <img src="/setup.png" alt="setup image" />
           <h1>
-            <motion.b whileHover={{ color: '#8441c7' }}>Desarrollo </motion.b>y
+            <b>Desarrollo </b>y
             <br />
-            Diseño <motion.b whileHover={{ color: '#8441c7' }}>Web.</motion.b>
+            Diseño <b>Web.</b>
           </h1>
         </div>
-      </motion.div>
-      <motion.div className="listContainer" variants={variants}>
+      </div>
+      <div className="listContainer">
         <div className="box">
           <h2>Stack tecnológico</h2>
           <div className='techContainer'>
@@ -93,8 +72,8 @@ function Services () {
             profesionalmente.
           </p>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   )
 }
 export default Services
