@@ -29,6 +29,13 @@
         text-align: center;
       }
 
+      @include tablet {
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+
       h2 {
         font-size: 30px;
         color: #8441c7;
@@ -40,6 +47,10 @@
 
         @include mobile {
           font-size: 36px;
+        }
+
+        @include tablet {
+          font-size: 74px;
         }
       }
 
@@ -79,6 +90,13 @@
       top: unset;
       right: unset;
       bottom: 5%;
+    }
+
+    @include tablet {
+      height: 60%;
+      top: unset;
+      right: unset;
+      bottom: 0;
     }
 
     img {
