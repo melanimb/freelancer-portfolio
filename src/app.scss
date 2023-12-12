@@ -25,11 +25,9 @@ section {
   @media (max-width: 738px) {
     height: 100%;
   }
-
+  
   .parallax {
-    @media (max-width: 738px) {
-      height: 100vh;
-    }
+    height: 100vh;
   }
 }
 
