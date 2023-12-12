@@ -18,7 +18,7 @@ const App = () => {
     <section id='Sobre mí'>
       <Services />
     </section>
-    <section id='Portfolio'>
+    <section id='Portfolio' className='parallax'>
       <Parallax type='portfolio' />
     </section>
     <Portfolio />
