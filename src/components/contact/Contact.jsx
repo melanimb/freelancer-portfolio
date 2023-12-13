@@ -51,14 +51,6 @@ function Contact () {
           <h2>Email</h2>
           <span>melanimb.dev@gmail.com</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Dirección</h2>
-          <span>Ontinyent, 46870 (Valencia)</span>
-        </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Teléfono</h2>
-          <span>+34 617 16 06 38</span>
-        </motion.div>
       </motion.div>
       <div className="formContainer">
         <motion.div
