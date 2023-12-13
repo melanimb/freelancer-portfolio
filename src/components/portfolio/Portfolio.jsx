@@ -6,21 +6,21 @@ const items = [
   {
     id: 1,
     title: 'Biobella landing page',
-    img: '../../public/portfolio/biobella.png',
+    img: 'biobella.png',
     desc: 'Landing page de un centro de estética realizada con NextJS y TailwindCSS',
     href: 'https://biobella.vercel.app/'
   },
   {
     id: 2,
     title: 'FreePics galería de imágenes',
-    img: '../../public/portfolio/free-pics-preview.gif',
+    img: 'free-pics-preview.gif',
     desc: 'Buscador de imágenes realizado con NextJS, TailwindCSS y Pexels API',
     href: 'https://free-pics.vercel.app/'
   },
   {
     id: 3,
     title: 'StoreTrack panel de administración',
-    img: '../../public/portfolio/store-track.jpg',
+    img: 'store-track.jpg',
     desc: 'Panel de administración realizado con Ruby on Rails y Bootstrap 5',
     href: 'https://github.com/melanimb/store-track'
   }

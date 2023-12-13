@@ -14,7 +14,7 @@ function Services () {
       </div>
       <div className="titleContainer">
         <div className="title">
-          <img src="/setup.png" alt="setup image" />
+          <img src="setup.png" alt="setup image" />
           <h1>
             <b>Desarrollo </b>y
             <br />

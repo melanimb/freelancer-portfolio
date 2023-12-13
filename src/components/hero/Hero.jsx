@@ -55,7 +55,7 @@ function Hero () {
             <motion.a href='#Contacto' variants={textVariants}>Contacto</motion.a>
           </motion.div>
           <motion.img
-            src="/scroll.png"
+            src="scroll.png"
             alt="scroll image"
             variants={textVariants}
             animate='scrollButton'
@@ -63,7 +63,7 @@ function Hero () {
         </motion.div>
       </div>
       <div className="imageContainer">
-        <img src="/spline.png" alt="spline image" />
+        <img src="spline.png" alt="spline image" />
       </div>
       <motion.div
         className="slidingTextContainer"
